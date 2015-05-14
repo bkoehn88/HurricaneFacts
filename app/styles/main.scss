@@ -1,31 +1,224 @@
 // bower:scss
 // endbower
 
-body {
-  background: #fafafa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
+@import 'imageProperties';
+@import 'nav';
+
+//background gradient:
+body{
+  background: #004799; /* Old browsers */
+  background: -moz-linear-gradient(top, #004799 1%, #d3fdff 39%, #d3fdff 63%, #004799 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#004799), color-stop(39%,#d3fdff), color-stop(63%,#d3fdff), color-stop(100%,#004799)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #004799 1%,#d3fdff 39%,#d3fdff 63%,#004799 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #004799 1%,#d3fdff 39%,#d3fdff 63%,#004799 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #004799 1%,#d3fdff 39%,#d3fdff 63%,#004799 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #004799 1%,#d3fdff 39%,#d3fdff 63%,#004799 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004799', endColorstr='#004799',GradientType=0 ); /* IE6-9 */
 }
 
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 300px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
-  h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
+//form in quiz.html:
+
+form{
+  padding-top: 20px;
+}
+
+//button in quiz.html:
+
+button{
+  display: inline-block;
+  margin-left: 45%;
+  margin-top: 1%;
+
+}
+
+//Bootstrap alerts containing the quiz answers. These are assigned Bootstrap classes alert-success and alert-danger when the quiz is graded, depending on whether or not the particular answers were correct.
+
+.alert{
+  display: inline-block;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 70%;
+}
+
+//Main container element for each page:
+
+.whiteContainer{
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: white;
+  border: solid 1px;
+  border-top-color: white;
+  padding-bottom: 5px;
+}
+
+
+h1{
+  font-family: Tahoma, Geneva, sans-serif;
+  text-align: center;
+}
+
+
+//Image caption for index.html:
+
+.caption{
+  text-align: center;
+  padding-top: 1%;
+  border: 1px solid black;
+  border-top-color: white;
+  border-left-color: white;
+  border-right-color: white;
+}
+
+//The slide-down info for each storm in index.html.
+
+.stormInfo{
+  background-color: black;
+  color: white;
+  width: 107px;
+  padding-top: 2px;
+  margin-left: 190px;
+  font-size: 0.7em;
+}
+
+//The title text for each hurricane in index.html.
+
+.hurricaneName{
+  float: left;
+  padding-top: 5%;
+  padding-right: 5px;
+}
+
+//Styling for the container on the right in index.html.
+
+.rightcontainertext{
+  display: inline-block;
+  width: 200%;
+  text-align: center;
+  padding-left: 30%;
+  padding-top: 10%;
+}
+
+//Styling for the container on the left in index.html.
+
+#storminfocontainer{
+  border-right: 1px solid black;
+}
+
+//Welcome text on index.html.
+
+#welcome{
+  display: inline-block;
+  padding-left: 80%;
+  text-align: center;
+}
+
+//Styling for the dropdowns used in both survivaltips.html and classification.html. Made functional using jquery in main.js.
+
+.drpdown{
+  background-color: #003300;
+  width: 200px;
+  height: 30px;
+  margin-top: 5%;
+  padding-top: 2px;
+  margin-left: 15%;
+  border: 3px solid #606040;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.survivaltip{
+  padding-top: 10px;
+  margin-left: 15%;
+  margin-right: 20%;
+}
+
+
+//Styling for the headers in survivaltips.html and classification.html.
+
+.header{
+  margin-left: 31.4%;
+  margin-right: 20%;
+  padding-top: 10px;
+}
+
+//Container element. Used in everything but index.html.
+
+.topcontainer{
+  border-bottom: 2px solid black;
+}
+
+//Centering the title text for classification.html:
+
+#classificationtitle{
+  text-align: center;
+}
+
+//Styling for the quiz results. Markup is generated in main.js.
+
+#results{
+  display: inline-block;
+  margin-top: 3%;
+    font-size: 2em;
+    margin-left: 43%;
+    text-align: center;
+
+  }
+
+//responsive design considerations:
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 700px){
+  
+  button{
+    margin: auto;
+  }
+  .stormInfo{
+    margin-left: 10%;
+    width: 100px;
+    }
+  .row-xs-3{
+    font-size:1.3em;
+  }
+  .hurricaneName{
+    font-size: 0.8em;
+  }
+  #welcome{
+    font-size: 0.8em;
+    font-weight: bolder;
+    padding-left: 2%;
+    }
+
+  .drpdown{
+    margin: auto;
+  }
+  .survivaltip{
+    margin: auto;
+  }
+
+  #results{
+    margin: auto;
   }
 }
 
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
+
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 980px){
+  .stormInfo{
+    margin-left: 35%;
+    width: 100px;
+    }
+  .row-xs-3{
+    font-size:1.3em;
+  }
+  .hurricaneName{
+    font-size: 0.8em;
+  }
+  #welcome{
+    font-size: 1.0em;
+    font-weight: bolder;
+    padding-left: 50%;
+   }
+  }

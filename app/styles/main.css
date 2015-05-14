@@ -1,0 +1,211 @@
+.logo {
+  float: right;
+  margin-top: 0.2%; }
+
+.isabel {
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.stormThumbnail {
+  margin-top: 2%;
+  margin-left: 10%;
+  border: 4px outset black; }
+
+.imgPressed {
+  border: 4px inset black;
+  border-bottom: 1px solid black; }
+
+.imgOver {
+  border: 4px outset grey; }
+
+.galv {
+  margin-left: 2%; }
+
+.labor {
+  margin-left: 2%; }
+
+#andrew2 {
+  margin-left: 87%; }
+
+.titletitle {
+  margin: auto;
+  padding-top: 20px; }
+
+.titleimage {
+  margin: auto;
+  padding-top: 20px; }
+
+.arrow {
+  padding-left: 10px; }
+
+.nav {
+  background-color: #2e445a;
+  a: active;
+    a-color: black; }
+  .nav a {
+    color: white; }
+  .nav a:hover {
+    color: black; }
+  .nav a:focus {
+    color: black; }
+
+body {
+  background: #004799;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #004799 1%, #d3fdff 39%, #d3fdff 63%, #004799 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #004799), color-stop(39%, #d3fdff), color-stop(63%, #d3fdff), color-stop(100%, #004799));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #004799 1%, #d3fdff 39%, #d3fdff 63%, #004799 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #004799 1%, #d3fdff 39%, #d3fdff 63%, #004799 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #004799 1%, #d3fdff 39%, #d3fdff 63%, #004799 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #004799 1%, #d3fdff 39%, #d3fdff 63%, #004799 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004799', endColorstr='#004799',GradientType=0 );
+  /* IE6-9 */ }
+
+form {
+  padding-top: 20px; }
+
+button {
+  display: inline-block;
+  margin-left: 45%;
+  margin-top: 1%; }
+
+.alert {
+  display: inline-block;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 70%; }
+
+.whiteContainer {
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: white;
+  border: solid 1px;
+  border-top-color: white;
+  padding-bottom: 5px; }
+
+h1 {
+  font-family: Tahoma, Geneva, sans-serif;
+  text-align: center; }
+
+.caption {
+  text-align: center;
+  padding-top: 1%;
+  border: 1px solid black;
+  border-top-color: white;
+  border-left-color: white;
+  border-right-color: white; }
+
+.stormInfo {
+  background-color: black;
+  color: white;
+  width: 107px;
+  padding-top: 2px;
+  margin-left: 190px;
+  font-size: 0.7em; }
+
+.hurricaneName {
+  float: left;
+  padding-top: 5%;
+  padding-right: 5px; }
+
+.rightcontainertext {
+  display: inline-block;
+  width: 200%;
+  text-align: center;
+  padding-left: 30%;
+  padding-top: 10%; }
+
+#storminfocontainer {
+  border-right: 1px solid black; }
+
+#welcome {
+  display: inline-block;
+  padding-left: 80%;
+  text-align: center; }
+
+.drpdown {
+  background-color: #003300;
+  width: 200px;
+  height: 30px;
+  margin-top: 5%;
+  padding-top: 2px;
+  margin-left: 15%;
+  border: 3px solid #606040;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9em; }
+
+.survivaltip {
+  padding-top: 10px;
+  margin-left: 15%;
+  margin-right: 20%; }
+
+.header {
+  margin-left: 31.4%;
+  margin-right: 20%;
+  padding-top: 10px; }
+
+.topcontainer {
+  border-bottom: 2px solid black; }
+
+#classificationtitle {
+  text-align: center; }
+
+#results {
+  display: inline-block;
+  margin-top: 3%;
+  font-size: 2em;
+  margin-left: 43%;
+  text-align: center; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 700px) {
+  button {
+    margin: auto; }
+
+  .stormInfo {
+    margin-left: 10%;
+    width: 100px; }
+
+  .row-xs-3 {
+    font-size: 1.3em; }
+
+  .hurricaneName {
+    font-size: 0.8em; }
+
+  #welcome {
+    font-size: 0.8em;
+    font-weight: bolder;
+    padding-left: 2%; }
+
+  .drpdown {
+    margin: auto; }
+
+  .survivaltip {
+    margin: auto; }
+
+  #results {
+    margin: auto; } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 980px) {
+  .stormInfo {
+    margin-left: 35%;
+    width: 100px; }
+
+  .row-xs-3 {
+    font-size: 1.3em; }
+
+  .hurricaneName {
+    font-size: 0.8em; }
+
+  #welcome {
+    font-size: 1.0em;
+    font-weight: bolder;
+    padding-left: 50%; } }
+
+/*# sourceMappingURL=main.css.map */

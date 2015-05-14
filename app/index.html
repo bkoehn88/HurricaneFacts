@@ -6,50 +6,85 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="/favicon.ico">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
   </head>
+  
   <body>
-    <!--[if lt IE 10]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+  
+  <!--Navbar-->
+
+  <img src="../images/logo.jpg" alt="Hurricane Safety: Facts and Tips" class="logo img-responsive" height="30" width="362"></img>
+  
+  <div class="titleTabs">
+    <ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="#">Home</a></li>
+    <li role="presentation"><a href="survivaltips.html">Survival Tips</a></li>
+    <li role="presentation"><a href="classification.html">Hurricane Classification</a></li>
+    <li role="presentation"><a href="quiz.html">Hurricane Quiz</a></li>
+    </ul>
+  </div>
+
+  <!--Content. Hurricane images are bound to a click event in jquery, which slides down info on that particular storm. -->
+
+  <div class="whiteContainer row-xs-12 container-fluid"> 
+    
+
+    <img src="../images/title.jpg" alt="Hurricane Safety - Facts and Tips" class="isabel img-responsive"></img>
 
 
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-      <li>HTML5 Boilerplate</li>
-      <li>Sass</li>
+    <img src="../images/isabel.jpg" alt="Hurricane Isabel" class="isabel img-responsive"></img>
 
-      </ul>
+    <p class="caption">(All images used are from NASA, Johnson Space Center, and the National Hurricane Center, and are in the public domain)</p>
+
+    <div class="col-xs-6" id="storminfocontainer">
+
+      <h3 class="row-xs-3"> Click a storm to learn more. </h3>
+
+      <h3 class="hurricaneName">Hurricane Katrina</h3>
+
+      <img src="../images/katrina.jpg" alt="Hurricane Katrina" class="stormThumbnail img-responsive"></img>
+
+      <div class="stormInfo"> Hurricane Katrina (2005) was the costliest natural disaster to ever hit the United States. Property damages amounted to an estimated $108 billion, and the death toll was at least 1,833 according to the U.S. National Hurricane Center. </div>
+
+      <h3 class="hurricaneName">Hurricane Camile</h3>
+
+
+
+      <img src="../images/camille.jpg" alt="Hurricane Camille" class="stormThumbnail img-responsive"></img>
+
+      <div class="stormInfo"> Hurricane Camille (1969) had the strongest winds of any U.S. landfalling hurricane. It was also a costly one, costing the U.S. 259 lives and $1.42 billion according to the National Hurricane Center. </div>
+
+   
+      <h3 class="hurricaneName galv"><p>1900 Galveston</p><p>Hurricane</p></h3>
+
+
+
+      <img src="../images/galveston.jpg" alt="Great Galveston Hurricane" class="stormThumbnail img-responsive"></img>
+
+      <div class="stormInfo"> The Great Galveston Hurricane of 1900 resulted in the most deaths of any U.S. natural disaster, totalling approximately 8,000 deaths. 
+      </div>
+
+      <h3 class="hurricaneName labor"><p>1935 Labor Day</p><p>Hurricane</p></h3>
+
+      <img src="../images/laborday.jpg" alt="Labor Day Hurricane of 1935" class="stormThumbnail img-responsive"></img>
+
+      <div class="stormInfo"> The labor day hurricane of 1935 had the highest intensity and strongest winds of any hurricane to hit the U.S. It took approx. 500 lives and cost the U.S. around $6 million. 
+      
     </div>
 
+  </div>
 
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <!-- endbower -->
-    <!-- endbuild -->
+    <div class="col-xs-3" id="rightcontainer">
+      <h3 id="welcome"> Welcome to HurricaneSafetyFacts! </h3>
+      <img src="../images/andrew2.jpg" alt="Hurricane Andrew" class="img-responsive" id="andrew2"></img>
+      <p class="rightcontainertext">Check out some <a href="survivaltips.html">hurricane survival tips.</a></p>
+      <p class="rightcontainertext">Or maybe learn about <a href="classification.html">how hurricanes are classified.</a></p>
+      <p class="rightcontainertext">If you're feeling up to it, take our hurricane trivia quiz!</p>
+    </div>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="scripts/main.js"></script>
 
-        <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
 </body>
 </html>
